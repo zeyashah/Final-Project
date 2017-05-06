@@ -11,7 +11,7 @@ body {
     color: red;
 }
 
-.nav {
+nav {
     display: block;
     z-index: 100;
     position: fixed;
@@ -23,8 +23,8 @@ ul {
     padding: 0;
     background-color: #333;
     position: fixed;
-    width: 80%;
-    right: 0;
+    width: 77%;
+    right: 45px;
 }
 
 li {
@@ -48,37 +48,20 @@ li a:hover {
     display: block;
     margin-top: 70px;
     top: 0;
-    left: 15px;
+    left: 40px;
     position: fixed;
-
-}
-
-#search input[type="text"] {
+    z-index: 400;
     background: 10px 6px #444;
     border: 0 none;
     font: 12px Arial,Helvetica,Sans-serif;
-    color: #fff;
-    width: 150px;
-    padding: 6px 15px 6px 35px;
-    border-radius: 5px;
-/*  -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -webkit-transition: all 0.7s ease 0s;
-    -moz-transition: all 0.7s ease 0s;
-    -o-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-*/
+    color: white;
+    width: 175px;
+    padding: 6px 15px 6px 15px;
     }
 
-/*
-#search input[type="text"]:focus {
-    width: 200px;
-    }
-*/
+#search:focus {
+	outline: 0;
+}
 /* END OF SEARCH */
 
 .social-media {
@@ -105,6 +88,10 @@ i {
     padding-top: 110px
 }
 
+.mainCarousel:focus {
+	outline: 0;
+}
+
 .mainCarousel .slick-arrow::before {
     color: black;
 }
@@ -121,7 +108,7 @@ i {
 
 .mainCarousel img {
     width: 100%;
-    height: 300px;
+    height: 450px;
 }
 
 .smallCarousel img {
@@ -133,8 +120,11 @@ i {
     width: 40%;
     height: 200px;
     display: inline-block;
-    right: -80px;
+    right: -60px;
+}
 
+.smallCarousel:focus {
+	outline: 0;
 }
 
 .slick-prev.slick-arrow::before {
@@ -152,7 +142,7 @@ i {
     width: 100px;
     text-align: center;
     right: 550px;
-    top: 130px;
+    top: 200px;
     position: absolute;
 }
 
@@ -161,9 +151,103 @@ a {
     color: white;
 }
 
-.press {
+#press {
     width: 50%;
     height: 200px;
     display: inline-block;
-    padding-left: 15px;
+    padding-left: 30px;
+}
+
+#ourStory {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media all and (min-width: 360px) and (max-width: 960px) {
+.title {
+	top: 0;
+	left: 0;
+    display: block;
+    color: red;
+    background-color: white;
+    width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	top: 67px;
+	right: 0;
+	width: 100%;
+}
+
+#search {
+    background: 10px 6px #444;
+    border: 0 none;
+    font: 25px Arial,Helvetica,Sans-serif;
+    color: white;
+    width: 100%;
+    top: 83px;
+    left: 0;
+    padding: 6px 15px 6px 15px;
+    display: inline-block;
+    position: fixed;
+    z-index: 400;
+    }
+
+.social-media {
+    top: 40px;
+    right: 0;
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    text-align: center;
+    padding-top: 8px;
+}
+
+i {
+	color: white;
+}
+
+.mainCarousel {
+    width: 80%;
+    display: block;
+}
+
+.smallCarousel {
+    width: 80%;
+    height: 300px;
+    display: block;
+    margin-top: 15px;
+}
+
+.signUp {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+}
+
+#press {
+    width: 90%;
+    display: inline-block;
+}
+
+#ourStory {
+	width: 90%;
+}
+
+.slick-dots{
+	bottom: 0;
+}
+
+
+
+
+
 }
