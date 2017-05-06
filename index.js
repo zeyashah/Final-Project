@@ -5,7 +5,14 @@ $(document).ready(function(){
 	  speed: 800,
 	  fade: true,
 	  cssEase: 'linear',
-	  autoplay: true,
+	  autoplay: true,	  
+	  responsive: [
+	  {
+	  	breakpoint: 650,
+	  	settings: "unslick"
+	  }
+	  ]
+
 	});
 });
 
@@ -16,7 +23,6 @@ $(document).ready(function(){
 	  speed: 500,
 	  fade: true,
 	  cssEase: 'linear',
-	  autoplay: true,
 	});
 });
 

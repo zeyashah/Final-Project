@@ -111,6 +111,10 @@ i {
     height: 450px;
 }
 
+.slick-slide img {
+    width: 100%;
+}
+
 .smallCarousel img {
     width: 100%;
     height: 200px;
@@ -214,38 +218,43 @@ i {
 }
 
 .mainCarousel {
-    width: 80%;
-    display: block;
+    position: relative;
+    top: 150px;
 }
 
 .smallCarousel {
-    width: 80%;
-    height: 300px;
-    display: block;
-    margin-top: 15px;
-}
-
-.signUp {
-    background-color: red;
-    color: white;
-    padding: 15px;
-    width: 100px;
-    text-align: center;
+    display: none;
 }
 
 #press {
+    top: 175px;
+    position: relative;
     width: 90%;
-    display: inline-block;
+    display: block;
+    margin: 20px;
+    left: -30px;
 }
 
 #ourStory {
-	width: 90%;
+    top: 225px;
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 20px;
+    left: -30px;
 }
 
-.slick-dots{
-	bottom: 0;
+hr {
+    display: none;
 }
 
+.signUp {
+    position: fixed;
+    top: 190px;
+    width: 100%;
+    right: 0;
+    z-index: 99;
+}
 
 
 
