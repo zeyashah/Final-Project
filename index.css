@@ -1,0 +1,262 @@
+body {
+    font-family: sans-serif;
+}
+
+/* BEGINNING OF NAV */
+.title {
+    display: inline-block;
+    top: 0;
+    left: 40px;
+    position: fixed;
+    color: red;
+}
+
+nav {
+    display: block;
+    z-index: 100;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    width: 77%;
+    right: 45px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+/* BEGIN OF SEARCH */
+#search {
+    display: block;
+    margin-top: 70px;
+    top: 0;
+    left: 40px;
+    position: fixed;
+    z-index: 400;
+    background: 10px 6px #444;
+    border: 0 none;
+    font: 12px Arial,Helvetica,Sans-serif;
+    color: white;
+    width: 175px;
+    padding: 6px 15px 6px 15px;
+    }
+
+#search:focus {
+	outline: 0;
+}
+/* END OF SEARCH */
+
+.social-media {
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+i {
+    color: gray;
+}
+
+/* END OF NAV */
+
+
+.mainCarousel {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 110px
+}
+
+.mainCarousel:focus {
+	outline: 0;
+}
+
+.mainCarousel .slick-arrow::before {
+    color: black;
+}
+
+.slick-dots {
+    background-color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mainCarousel img {
+    width: 100%;
+    height: 450px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.smallCarousel img {
+    width: 100%;
+    height: 200px;
+}
+
+.smallCarousel {
+    width: 40%;
+    height: 200px;
+    display: inline-block;
+    right: -60px;
+}
+
+.smallCarousel:focus {
+	outline: 0;
+}
+
+.slick-prev.slick-arrow::before {
+    color: black;
+}
+
+.slick-next.slick-arrow::before {
+    color: black;
+}
+
+.signUp {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    right: 550px;
+    top: 200px;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#press {
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#ourStory {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media all and (min-width: 360px) and (max-width: 960px) {
+.title {
+	top: 0;
+	left: 0;
+    display: block;
+    color: red;
+    background-color: white;
+    width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	top: 67px;
+	right: 0;
+	width: 100%;
+}
+
+#search {
+    background: 10px 6px #444;
+    border: 0 none;
+    font: 25px Arial,Helvetica,Sans-serif;
+    color: white;
+    width: 100%;
+    top: 83px;
+    left: 0;
+    padding: 6px 15px 6px 15px;
+    display: inline-block;
+    position: fixed;
+    z-index: 400;
+    }
+
+.social-media {
+    top: 40px;
+    right: 0;
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    text-align: center;
+    padding-top: 8px;
+}
+
+i {
+	color: white;
+}
+
+.mainCarousel {
+    position: relative;
+    top: 150px;
+}
+
+.smallCarousel {
+    display: none;
+}
+
+#press {
+    top: 175px;
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: 20px;
+    left: -30px;
+}
+
+#ourStory {
+    top: 225px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    margin: 20px;
+    left: -30px;
+}
+
+hr {
+    display: none;
+}
+
+.signUp {
+    position: fixed;
+    top: 190px;
+    width: 100%;
+    right: 0;
+    z-index: 99;
+}
+
+
+
+
+}
