@@ -1,0 +1,379 @@
+/*start @1440px(laptop)*/
+
+html, body, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* BEGINNING OF NAV */
+.title {
+    display: inline-block;
+    text-align: center;
+    top: 4px;
+    left: 3px;
+    position: fixed;
+    color: red;
+    border: 3px solid red;
+/*    margin: 2 0 0 0;*/
+    width: 17.1%;
+}
+
+.nav {
+    display: block;
+    z-index: 100;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1 0 0 0;
+    padding: 0;
+    background-color: #474747;
+    position: fixed;
+    width: 82%;
+    right: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+li a:visited {
+	color: white;
+}
+
+/* BEGIN OF SEARCH */
+#search {
+    display: block;
+    margin-top: 100px;
+    top: 0;
+    left: 89px;
+    position: fixed;
+
+}
+
+#search input[type="text"] {
+    background: 10px 6px darkgrey;
+    border: 0 none;
+    font: 12px Arial, Helvetica, Sans-serif;
+    color: #fff;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+
+#search input[type="text"]:focus {
+    width: 200px;
+    }
+
+/* END OF SEARCH */
+
+.social-media {
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    margin-top: 90px;
+    margin-right: 57px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+i {
+    color: red;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* END OF NAV */
+
+
+.wrapper {
+	position: relative;
+	z-index: 5;
+}
+
+.inner-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+
+.clear {
+	clear: both;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+h3 {
+	color:red;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: purple;
+}
+
+span {color: blue;
+}
+
+p {
+	/*background-color: grey;*/
+	font-family: "Sans-serif";
+	color: black;
+	line-height: 15px;
+	text-align: justify;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.blocks2 {
+	float: left;
+	width: 271px;
+	height: 370px;
+	margin: 13px; 
+/*	border: 2px solid black;*/
+	border-bottom: 2px solid black;
+}
+
+.images {
+	width: 269px;
+	height: 180px;
+	margin: 4 auto;
+/*	background-image: url(IMAGES/ImageProxy.jpg);*/
+	border: 1px solid black;
+/*	border-bottom: 4px solid black;*/
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    line-height: 8px;
+    padding: 12px 10px;
+    background-color: #474747;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.modal-body p {    
+    line-height: 25px;
+    text-align: center;
+}
+
+.modal-footer {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    text-align: right;
+    font-size: 15px;
+}
+
+.modal-footer a {
+	color: white;
+}
+
+#myBtn {
+    padding: 2px;
+    margin: 8px 0px 0px 196px;
+    background-color: darkgrey;
+}
+
+h5 {
+	margin-top: -15px;
+	padding-right: 10px;
+}
+
+
+/*
+.images {
+    margin-top: 1px;
+}
+
+.inner-wrapper {
+    float: left;
+    margin: 50px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h2 {  
+    margin-bottom: 5px;
+    text-align: center;
+}*/
+
+
+
+
+/* @768px */
+@media all and (max-width: 768px) {
+
+	body {
+		background-color: #e6e6ff;
+	}
+
+	ul {
+	    width: 81%;
+	}
+
+	#search {
+	    margin-top: 66px;
+	    left: 143px;
+	}
+
+	.social-media {
+		margin-top: 65px;
+		margin-right: 36px;
+	}
+
+	.inner-wrapper {
+		width: 100%;
+	}	
+
+	.blocks2 {
+		margin: 5px 0px 0px 65px;
+		border-bottom: none;	
+	}
+
+/*	img {
+		width: 50%;
+	}*/
+
+
+
+/* @480 */
+@media all and (max-width: 480px) {
+
+	body {
+		background-color: white;
+	}
+
+	.inner-wrapper {
+		width: 100%;
+/*		width: 480px;
+		margin: 0 auto;*/
+	}
+
+	p {display: none
+	}
+
+	.blocks2 {
+		height: 210px;
+		padding-top: 25px; 
+		border-bottom: 2px solid black;
+		margin: 5px 0px 0px 90px;
+/*		width: 480px;
+		margin: 0 auto;*/
+/*		text-align: center;	*/
+/*		width: 100%;*/
+	}
+
+	.images { 
+	margin-bottom: -15px
+	}
+
+/*	img {
+		width: 100%;
+	}*/
