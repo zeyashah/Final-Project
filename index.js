@@ -1,19 +1,25 @@
 $(document).ready(function(){
-	$(".mainCarousel").slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 800,
-	  fade: true,
-	  cssEase: 'linear',
-	  autoplay: true,	  
-	  responsive: [
-	  {
-	  	breakpoint: 650,
-	  	settings: "unslick"
-	  }
-	  ]
+	if ($(window).width() > 650) {
+		$(".mainCarousel").slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 800,
+		  fade: true,
+		  cssEase: 'linear',
+		  autoplay: true,	  
+		  responsive: [
+		  {
+		  	breakpoint: 650,
+		  	settings: "unslick"
+		  }, 
+		  {
+		  	breakpoint: 1024,
+		  	settings: "slick"
+		  }
+		  ]
 
-	});
+		});
+	}
 });
 
 $(document).ready(function(){
